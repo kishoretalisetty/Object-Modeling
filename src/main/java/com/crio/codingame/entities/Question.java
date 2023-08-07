@@ -9,6 +9,7 @@ public class Question extends BaseEntity {
     public Question(Question question){
         this(question.id,question.title,question.level,question.score);
     }
+    //new Question("4", "title4", Level.LOW,10)
 
     public Question(String id, String title, Level level, Integer score) {
         this(title,level,score);

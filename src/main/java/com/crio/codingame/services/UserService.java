@@ -72,23 +72,7 @@ public class UserService implements IUserService {
     // TODO: CRIO_TASK_MODULE_SERVICES
     // Withdraw the user from the contest
     // Hint :- Refer Unit Testcases withdrawContest method
-
-    // @Override
-    // public UserRegistrationDto withdrawContest(String contestId, String userName)
-    //  throws ContestNotFoundException, UserNotFoundException, InvalidOperationException {
-    //     Optional<Contest> Contestoptional=contestRepository.findById(contestId);
-    //     Contest contest=Contestoptional.get();
-    //     if(contest==null){
-    //         throw new ContestNotFoundException();
-    //     }
-    //     Optional<User> userOptional=userRepository.findByName(userName);
-    //     User user=userOptional.get();
-    //     if(user==null){
-    //         throw new UserNotFoundException();
-    //     }
-
-    //  //return null;
-    // }
+    
     @Override
     public UserRegistrationDto withdrawContest(String contestId, String userName) throws ContestNotFoundException, UserNotFoundException, InvalidOperationException {
         

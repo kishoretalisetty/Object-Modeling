@@ -49,7 +49,7 @@ public class QuestionServiceTest {
         Assertions.assertEquals(expectedQuestion,actualQuestion);
         verify(qRepositoryMock,times(1)).save(any(Question.class));
     }
-
+    
     @Test
     @DisplayName("getAllQuestionLevelWise method should return List of Question if input is null")
     public void getAllQuestionLevelWise_ShouldReturnAllQuestionList(){
@@ -65,8 +65,6 @@ public class QuestionServiceTest {
 
         //Act
         List<Question> actualQuestionList = questionService.getAllQuestionLevelWise(null);
-    //     System.out.println(actualQuestionList.size());
-    //   actualQuestionList.stream().forEach(a->System.out.println(a.toString()));
         //Assert
         Assertions.assertTrue(
             expectedQuestionList.size() == actualQuestionList.size() &&

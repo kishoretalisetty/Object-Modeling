@@ -52,7 +52,6 @@ public class UserServiceTest {
 
     @InjectMocks
     private UserService userService;
-    
     @Test
     @DisplayName("create method should create User")
     public void create_ShouldReturnUser(){
