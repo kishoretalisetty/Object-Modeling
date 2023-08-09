@@ -78,7 +78,7 @@ public class UserService implements IUserService {
         
         // Contest contest= contestRepository.findById(contestId).orElseThrow(()->  new ContestNotFoundException());
 
-        // User user=userRepository.findByName(userName).orElseThrow(()-> new UserNotFoundException());
+        // orElseThrow(()-> new UUser user=userRepository.findByName(userName).serNotFoundException());
         Optional<Contest> Contestoptional=contestRepository.findById(contestId);
         if(Contestoptional.isEmpty()) throw new ContestNotFoundException();
             Contest contest=Contestoptional.get();
